@@ -15,6 +15,7 @@
     <andy.jackson.version>2.6.0</andy.jackson.version>
     <andy.logback.version>1.1.5</andy.logback.version>
     <andy.slf4j.version>1.7.18</andy.slf4j.version>
+    <andy.curator.version>3.1.0</andy.curator.version>
     <andy.maven.release.url>http://repo1.maven.org/maven2</andy.maven.release.url>
     <andy.maven.release.id>maven-central-release</andy.maven.release.id>
   </properties>
@@ -52,6 +53,26 @@
         <version>18.0</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-framework</artifactId>
+        <version>${andy.curator.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-recipes</artifactId>
+        <version>${andy.curator.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-client</artifactId>
+        <version>${andy.curator.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.andyaylward</groupId>
+        <artifactId>Logging</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.12</version>
@@ -62,9 +83,9 @@
         <version>3.1.0</version>
       </dependency>
       <dependency>
-        <groupId>com.andyaylward</groupId>
-        <artifactId>Logging</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>1.10.19</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
