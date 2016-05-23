@@ -12,9 +12,12 @@
   <properties>
     <andy.java.version>1.8</andy.java.version>
     <andy.mainClass/> <!-- override this in runnable projects -->
-    <andy.jackson.version>2.6.0</andy.jackson.version>
-    <andy.logback.version>1.1.5</andy.logback.version>
-    <andy.slf4j.version>1.7.18</andy.slf4j.version>
+    <andy.jackson.version>2.7.4</andy.jackson.version>
+    <andy.resteasy.version>3.0.17.Final</andy.resteasy.version>
+    <andy.guice.version>4.0</andy.guice.version>
+    <andy.guava.version>18.0</andy.guava.version>
+    <andy.logback.version>1.1.7</andy.logback.version>
+    <andy.slf4j.version>1.7.21</andy.slf4j.version>
     <andy.curator.version>3.1.0</andy.curator.version>
     <andy.maven.release.url>http://repo1.maven.org/maven2</andy.maven.release.url>
     <andy.maven.release.id>maven-central-release</andy.maven.release.id>
@@ -23,6 +26,11 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-guice</artifactId>
+        <version>${andy.resteasy.version}</version>
+      </dependency>
+      <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
         <version>${andy.logback.version}</version>
@@ -30,6 +38,11 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
+        <version>${andy.slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
         <version>${andy.slf4j.version}</version>
       </dependency>
       <dependency>
@@ -45,12 +58,12 @@
       <dependency>
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
-        <version>4.0</version>
+        <version>${andy.guice.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>18.0</version>
+        <version>${andy.guava.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
