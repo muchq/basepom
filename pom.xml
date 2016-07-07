@@ -14,6 +14,7 @@
     <andy.mainClass/> <!-- override this in runnable projects -->
     <andy.jackson.version>2.7.4</andy.jackson.version>
     <andy.jetty.version>9.3.9.v20160517</andy.jetty.version>
+    <andy.netty.version>4.1.2.Final</andy.netty.version>
     <andy.resteasy.version>3.0.17.Final</andy.resteasy.version>
     <andy.guice.version>4.0</andy.guice.version>
     <andy.guava.version>18.0</andy.guava.version>
@@ -26,6 +27,11 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-all</artifactId>
+        <version>${andy.netty.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
@@ -67,7 +73,7 @@
         <version>${andy.jackson.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
+        <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-jdk8</artifactId>
         <version>${andy.jackson.version}</version>
       </dependency>
