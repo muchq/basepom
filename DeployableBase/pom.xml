@@ -26,6 +26,9 @@
               </transformer>
             </transformers>
           </configuration>
+          <configuration>
+            <createDependencyReducedPom>false</createDependencyReducedPom>
+          </configuration>
           <executions>
             <execution>
               <phase>package</phase>
