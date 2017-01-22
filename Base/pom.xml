@@ -10,16 +10,18 @@
   <properties>
     <andy.java.version>1.8</andy.java.version>
     <andy.mainClass/> <!-- override this in runnable projects -->
-    <andy.jackson.version>2.8.1</andy.jackson.version>
-    <andy.jetty.version>9.3.10.v20160621</andy.jetty.version>
-    <andy.netty.version>4.1.3.Final</andy.netty.version>
-    <andy.resteasy.version>3.0.18.Final</andy.resteasy.version>
+    <andy.jackson.version>2.8.6</andy.jackson.version>
+    <andy.jetty.version>9.4.0.v20161208</andy.jetty.version>
+    <andy.netty.version>4.1.7.Final</andy.netty.version>
+    <andy.resteasy.version>3.1.0.Final</andy.resteasy.version>
     <andy.guice.version>4.1.0</andy.guice.version>
-    <andy.guava.version>19.0</andy.guava.version>
-    <andy.logback.version>1.1.7</andy.logback.version>
-    <andy.slf4j.version>1.7.21</andy.slf4j.version>
-    <andy.curator.version>3.2.0</andy.curator.version>
-    <andy.immutables.version>2.2.10</andy.immutables.version>
+    <andy.guava.version>21.0</andy.guava.version>
+    <andy.logback.version>1.1.9</andy.logback.version>
+    <andy.slf4j.version>1.7.22</andy.slf4j.version>
+    <andy.curator.version>3.2.1</andy.curator.version>
+    <andy.immutables.version>2.4.2</andy.immutables.version>
+    <andy.junit.version>4.12</andy.junit.version>
+    <andy.mockito.version>2.6.5</andy.mockito.version>
     <andy.maven.release.url>http://repo1.maven.org/maven2</andy.maven.release.url>
     <andy.maven.release.id>maven-central-release</andy.maven.release.id>
   </properties>
@@ -134,7 +136,7 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <version>${andy.junit.version}</version>
       </dependency>
       <dependency>
         <groupId>org.assertj</groupId>
@@ -144,7 +146,7 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>1.10.19</version>
+        <version>${andy.mockito.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -163,7 +165,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.6.1</version>
         <configuration>
           <source>${andy.java.version}</source>
           <target>${andy.java.version}</target>
@@ -171,7 +173,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.10</version>
+        <version>3.0.0</version>
         <executions>
           <execution>
             <id>analyze</id>
