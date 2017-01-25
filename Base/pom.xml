@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.andyaylward</groupId>
+  <groupId>com.muchq</groupId>
   <artifactId>Base</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
-    <andy.java.version>1.8</andy.java.version>
-    <andy.mainClass/> <!-- override this in runnable projects -->
-    <andy.jackson.version>2.8.6</andy.jackson.version>
-    <andy.jetty.version>9.4.0.v20161208</andy.jetty.version>
-    <andy.netty.version>4.1.7.Final</andy.netty.version>
-    <andy.resteasy.version>3.1.0.Final</andy.resteasy.version>
-    <andy.javaxinject.version>1</andy.javaxinject.version>
-    <andy.guice.version>4.1.0</andy.guice.version>
-    <andy.guava.version>21.0</andy.guava.version>
-    <andy.logback.version>1.1.9</andy.logback.version>
-    <andy.slf4j.version>1.7.22</andy.slf4j.version>
-    <andy.curator.version>3.2.1</andy.curator.version>
-    <andy.immutables.version>2.4.2</andy.immutables.version>
-    <andy.junit.version>4.12</andy.junit.version>
-    <andy.mockito.version>2.6.5</andy.mockito.version>
-    <andy.maven.release.url>http://repo1.maven.org/maven2</andy.maven.release.url>
-    <andy.maven.release.id>maven-central-release</andy.maven.release.id>
+    <muchq.java.version>1.8</muchq.java.version>
+    <muchq.mainClass/> <!-- override this in runnable projects -->
+    <muchq.jackson.version>2.8.6</muchq.jackson.version>
+    <muchq.jetty.version>9.4.0.v20161208</muchq.jetty.version>
+    <muchq.netty.version>4.1.7.Final</muchq.netty.version>
+    <muchq.resteasy.version>3.1.0.Final</muchq.resteasy.version>
+    <muchq.javaxinject.version>1</muchq.javaxinject.version>
+    <muchq.guice.version>4.1.0</muchq.guice.version>
+    <muchq.guava.version>21.0</muchq.guava.version>
+    <muchq.logback.version>1.1.9</muchq.logback.version>
+    <muchq.slf4j.version>1.7.22</muchq.slf4j.version>
+    <muchq.curator.version>3.2.1</muchq.curator.version>
+    <muchq.immutables.version>2.4.2</muchq.immutables.version>
+    <muchq.junit.version>4.12</muchq.junit.version>
+    <muchq.mockito.version>2.6.5</muchq.mockito.version>
+    <muchq.maven.release.url>http://repo1.maven.org/maven2</muchq.maven.release.url>
+    <muchq.maven.release.id>maven-central-release</muchq.maven.release.id>
   </properties>
 
   <dependencyManagement>
@@ -32,97 +33,97 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
-        <version>${andy.netty.version}</version>
+        <version>${muchq.netty.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
-        <version>${andy.jetty.version}</version>
+        <version>${muchq.jetty.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-webapp</artifactId>
-        <version>${andy.jetty.version}</version>
+        <version>${muchq.jetty.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-guice</artifactId>
-        <version>${andy.resteasy.version}</version>
+        <version>${muchq.resteasy.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-jackson2-provider</artifactId>
-        <version>${andy.resteasy.version}</version>
+        <version>${muchq.resteasy.version}</version>
       </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>${andy.logback.version}</version>
+        <version>${muchq.logback.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>${andy.slf4j.version}</version>
+        <version>${muchq.slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>
-        <version>${andy.slf4j.version}</version>
+        <version>${muchq.slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-core</artifactId>
-        <version>${andy.jackson.version}</version>
+        <version>${muchq.jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
-        <version>${andy.jackson.version}</version>
+        <version>${muchq.jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-jdk8</artifactId>
-        <version>${andy.jackson.version}</version>
+        <version>${muchq.jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
-        <version>${andy.jackson.version}</version>
+        <version>${muchq.jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.inject</groupId>
         <artifactId>javax.inject</artifactId>
-        <version>${andy.javaxinject.version}</version>
+        <version>${muchq.javaxinject.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject</groupId>
         <artifactId>guice</artifactId>
-        <version>${andy.guice.version}</version>
+        <version>${muchq.guice.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.inject.extensions</groupId>
         <artifactId>guice-multibindings</artifactId>
-        <version>${andy.guice.version}</version>
+        <version>${muchq.guice.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>${andy.guava.version}</version>
+        <version>${muchq.guava.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-framework</artifactId>
-        <version>${andy.curator.version}</version>
+        <version>${muchq.curator.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-recipes</artifactId>
-        <version>${andy.curator.version}</version>
+        <version>${muchq.curator.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-client</artifactId>
-        <version>${andy.curator.version}</version>
+        <version>${muchq.curator.version}</version>
       </dependency>
       <dependency>
         <groupId>org.reflections</groupId>
@@ -132,17 +133,17 @@
       <dependency>
         <groupId>org.immutables</groupId>
         <artifactId>value</artifactId>
-        <version>${andy.immutables.version}</version>
+        <version>${muchq.immutables.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.andyaylward</groupId>
+        <groupId>com.muchqaylward</groupId>
         <artifactId>Logging</artifactId>
         <version>1.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>${andy.junit.version}</version>
+        <version>${muchq.junit.version}</version>
       </dependency>
       <dependency>
         <groupId>org.assertj</groupId>
@@ -152,7 +153,7 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>${andy.mockito.version}</version>
+        <version>${muchq.mockito.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -162,10 +163,21 @@
       <snapshots>
         <updatePolicy>always</updatePolicy>
       </snapshots>
-      <id>${andy.maven.release.id}</id>
-      <url>${andy.maven.release.url}</url>
+      <id>${muchq.maven.release.id}</id>
+      <url>${muchq.maven.release.url}</url>
     </repository>
   </repositories>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 
   <build>
     <plugins>
@@ -173,8 +185,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.6.1</version>
         <configuration>
-          <source>${andy.java.version}</source>
-          <target>${andy.java.version}</target>
+          <source>${muchq.java.version}</source>
+          <target>${muchq.java.version}</target>
         </configuration>
       </plugin>
       <plugin>
