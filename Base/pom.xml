@@ -21,6 +21,7 @@
     <muchq.logback.version>1.1.9</muchq.logback.version>
     <muchq.slf4j.version>1.7.22</muchq.slf4j.version>
     <muchq.curator.version>3.2.1</muchq.curator.version>
+    <muchq.rosetta.version>3.11.2</muchq.rosetta.version>
     <muchq.immutables.version>2.4.2</muchq.immutables.version>
     <muchq.junit.version>4.12</muchq.junit.version>
     <muchq.mockito.version>2.6.5</muchq.mockito.version>
@@ -126,6 +127,21 @@
         <version>${muchq.curator.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.hubspot.rosetta</groupId>
+        <artifactId>RosettaCore</artifactId>
+        <version>${muchq.rosetta.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.hubspot.rosetta</groupId>
+        <artifactId>RosettaAnnotations</artifactId>
+        <version>${muchq.rosetta.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.hubspot.rosetta</groupId>
+        <artifactId>RosettaJdbi</artifactId>
+        <version>${muchq.rosetta.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.reflections</groupId>
         <artifactId>reflections</artifactId>
         <version>0.9.10</version>
@@ -136,7 +152,7 @@
         <version>${muchq.immutables.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.muchqaylward</groupId>
+        <groupId>com.muchq</groupId>
         <artifactId>Logging</artifactId>
         <version>1.0-SNAPSHOT</version>
       </dependency>
