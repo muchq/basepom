@@ -88,6 +88,11 @@
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.datatype</groupId>
+        <artifactId>jackson-datatypes-collections</artifactId>
+        <version>${muchq.jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.datatype</groupId>
         <artifactId>jackson-datatype-jsr310</artifactId>
         <version>${muchq.jackson.version}</version>
       </dependency>
