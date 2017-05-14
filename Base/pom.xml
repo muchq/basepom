@@ -9,21 +9,23 @@
   <packaging>pom</packaging>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <muchq.java.version>1.8</muchq.java.version>
-    <muchq.mainClass/> <!-- override this in runnable projects -->
-    <muchq.jackson.version>2.8.6</muchq.jackson.version>
+    <muchq.jackson.version>2.8.8</muchq.jackson.version>
     <muchq.jetty.version>9.4.0.v20161208</muchq.jetty.version>
-    <muchq.netty.version>4.1.7.Final</muchq.netty.version>
-    <muchq.asynchttp.version>2.0.29</muchq.asynchttp.version>
+    <muchq.netty.version>4.1.11.Final</muchq.netty.version>
+    <muchq.asynchttp.version>2.0.32</muchq.asynchttp.version>
     <muchq.resteasy.version>3.1.0.Final</muchq.resteasy.version>
     <muchq.javaxinject.version>1</muchq.javaxinject.version>
     <muchq.guice.version>4.1.0</muchq.guice.version>
     <muchq.guava.version>21.0</muchq.guava.version>
-    <muchq.logback.version>1.1.9</muchq.logback.version>
+    <muchq.logback.version>1.2.2</muchq.logback.version>
     <muchq.slf4j.version>1.7.22</muchq.slf4j.version>
     <muchq.curator.version>3.2.1</muchq.curator.version>
     <muchq.rosetta.version>3.11.2</muchq.rosetta.version>
-    <muchq.immutables.version>2.4.2</muchq.immutables.version>
+    <muchq.hystrix.version>1.5.11</muchq.hystrix.version>
+    <muchq.failsafe.version>1.0.4</muchq.failsafe.version>
+    <muchq.immutables.version>2.4.6</muchq.immutables.version>
     <muchq.junit.version>4.12</muchq.junit.version>
     <muchq.mockito.version>2.6.5</muchq.mockito.version>
     <muchq.maven.release.url>http://repo1.maven.org/maven2</muchq.maven.release.url>
@@ -38,9 +40,14 @@
         <version>${muchq.netty.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.netflix.hystrix</groupId>
+        <artifactId>hystrix-core</artifactId>
+        <version>${muchq.hystrix.version}</version>
+      </dependency>
+      <dependency>
         <groupId>net.jodah</groupId>
         <artifactId>failsafe</artifactId>
-        <version>1.0.3</version>
+        <version>${muchq.failsafe.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
