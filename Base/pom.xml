@@ -15,11 +15,13 @@
     <muchq.failsafe.version>1.0.4</muchq.failsafe.version>
     <muchq.guava.version>23.0</muchq.guava.version>
     <muchq.guice.version>4.1.0</muchq.guice.version>
+    <muchq.hikaricp.version>2.7.2</muchq.hikaricp.version>
     <muchq.hystrix.version>1.5.11</muchq.hystrix.version>
     <muchq.immutables.version>2.5.5</muchq.immutables.version>
     <muchq.jackson.version>2.9.2</muchq.jackson.version>
     <muchq.java.version>1.8</muchq.java.version>
     <muchq.javaxinject.version>1</muchq.javaxinject.version>
+    <muchq.jdbi.version>2.78</muchq.jdbi.version>
     <muchq.jetty.version>9.4.0.v20161208</muchq.jetty.version>
     <muchq.junit.version>4.12</muchq.junit.version>
     <muchq.logback.version>1.2.3</muchq.logback.version>
@@ -174,6 +176,16 @@
         <groupId>com.hubspot.rosetta</groupId>
         <artifactId>RosettaJdbi</artifactId>
         <version>${muchq.rosetta.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jdbi</groupId>
+        <artifactId>jdbi</artifactId>
+        <version>${muchq.jdbi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>${muchq.hikaricp.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mariadb.jdbc</groupId>
