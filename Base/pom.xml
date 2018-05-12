@@ -21,7 +21,7 @@
     <muchq.hikaricp.version>2.7.2</muchq.hikaricp.version>
     <muchq.hystrix.version>1.5.11</muchq.hystrix.version>
     <muchq.immutables.version>2.5.5</muchq.immutables.version>
-    <muchq.jackson.version>2.9.2</muchq.jackson.version>
+    <muchq.jackson.version>2.9.5</muchq.jackson.version>
     <muchq.java.version>1.8</muchq.java.version>
     <muchq.javaxinject.version>1</muchq.javaxinject.version>
     <muchq.jdbi.version>2.78</muchq.jdbi.version>
