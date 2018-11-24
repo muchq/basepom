@@ -10,32 +10,32 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <muchq.asynchttp.version>2.0.37</muchq.asynchttp.version>
+    <muchq.asynchttp.version>2.6.0</muchq.asynchttp.version>
     <muchq.aws.sdk.version>1.11.106</muchq.aws.sdk.version>
-    <muchq.curator.version>3.2.1</muchq.curator.version>
+    <muchq.curator.version>4.0.1</muchq.curator.version>
     <muchq.dropwizard.version>1.0.9</muchq.dropwizard.version>
     <muchq.dropwizard-guicier.version>1.0.9.0</muchq.dropwizard-guicier.version>
-    <muchq.failsafe.version>1.0.4</muchq.failsafe.version>
-    <muchq.guava.version>23.0</muchq.guava.version>
+    <muchq.failsafe.version>1.1.1</muchq.failsafe.version>
+    <muchq.guava.version>27.0.1-jre</muchq.guava.version>
     <muchq.guice.version>4.1.0</muchq.guice.version>
-    <muchq.hikaricp.version>2.7.2</muchq.hikaricp.version>
+    <muchq.hikaricp.version>3.2.0</muchq.hikaricp.version>
     <muchq.hystrix.version>1.5.11</muchq.hystrix.version>
-    <muchq.immutables.version>2.5.5</muchq.immutables.version>
-    <muchq.jackson.version>2.9.5</muchq.jackson.version>
+    <muchq.immutables.version>2.7.3</muchq.immutables.version>
+    <muchq.jackson.version>2.9.7</muchq.jackson.version>
     <muchq.java.version>1.8</muchq.java.version>
     <muchq.javaxinject.version>1</muchq.javaxinject.version>
     <muchq.jdbi.version>2.78</muchq.jdbi.version>
-    <muchq.jdbi3.version>3.2.1</muchq.jdbi3.version>
-    <muchq.jetty.version>9.4.11.v20180605</muchq.jetty.version>
+    <muchq.jdbi3.version>3.5.1</muchq.jdbi3.version>
+    <muchq.jetty.version>9.4.14.v20181114</muchq.jetty.version>
     <muchq.junit.version>4.12</muchq.junit.version>
     <muchq.logback.version>1.2.3</muchq.logback.version>
     <muchq.mainClass/>
     <muchq.maven.release.url>http://repo1.maven.org/maven2</muchq.maven.release.url>
     <muchq.maven.release.id>maven-central-release</muchq.maven.release.id>
     <muchq.mockito.version>2.12.0</muchq.mockito.version>
-    <muchq.netty.version>4.1.17.Final</muchq.netty.version>
-    <muchq.resteasy.version>3.1.3.Final</muchq.resteasy.version>
-    <muchq.rosetta.version>3.11.6</muchq.rosetta.version>
+    <muchq.netty.version>4.1.31.Final</muchq.netty.version>
+    <muchq.resteasy.version>3.6.2.Final</muchq.resteasy.version>
+    <muchq.rosetta.version>3.11.9</muchq.rosetta.version>
     <muchq.slf4j.version>1.7.25</muchq.slf4j.version>
   </properties>
 
