@@ -10,33 +10,48 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <muchq.asynchttp.version>2.6.0</muchq.asynchttp.version>
-    <muchq.aws.sdk.version>1.11.106</muchq.aws.sdk.version>
-    <muchq.curator.version>4.0.1</muchq.curator.version>
-    <muchq.dropwizard.version>1.0.9</muchq.dropwizard.version>
-    <muchq.dropwizard-guicier.version>1.0.9.0</muchq.dropwizard-guicier.version>
+    <muchq.mainClass/>
+
     <muchq.failsafe.version>1.1.1</muchq.failsafe.version>
     <muchq.guava.version>27.0.1-jre</muchq.guava.version>
     <muchq.guice.version>4.1.0</muchq.guice.version>
-    <muchq.hikaricp.version>3.2.0</muchq.hikaricp.version>
     <muchq.hystrix.version>1.5.11</muchq.hystrix.version>
     <muchq.immutables.version>2.7.3</muchq.immutables.version>
     <muchq.jackson.version>2.9.7</muchq.jackson.version>
-    <muchq.java.version>1.8</muchq.java.version>
-    <muchq.javaxinject.version>1</muchq.javaxinject.version>
     <muchq.jdbi.version>2.78</muchq.jdbi.version>
     <muchq.jdbi3.version>3.5.1</muchq.jdbi3.version>
     <muchq.jetty.version>9.4.14.v20181114</muchq.jetty.version>
     <muchq.junit.version>4.12</muchq.junit.version>
     <muchq.logback.version>1.2.3</muchq.logback.version>
-    <muchq.mainClass/>
-    <muchq.maven.release.url>http://repo1.maven.org/maven2</muchq.maven.release.url>
+    <muchq.java.version>11</muchq.java.version>
+    <muchq.jackson.version>2.10.1</muchq.jackson.version>
+    <muchq.jetty.version>9.4.24.v20191120</muchq.jetty.version>
+    <muchq.netty.version>4.1.43.Final</muchq.netty.version>
+
+    <muchq.asynchttp.version>2.10.4</muchq.asynchttp.version>
+    <muchq.aws.sdk.version>1.11.106</muchq.aws.sdk.version>
+    <muchq.curator.version>4.2.0</muchq.curator.version>
+    <muchq.failsafe.version>2.3.1</muchq.failsafe.version>
+    <muchq.guava.version>28.1-jre</muchq.guava.version>
+    <muchq.guice.version>4.2.2</muchq.guice.version>
+    <muchq.hikaricp.version>3.4.1</muchq.hikaricp.version>
+    <muchq.hystrix.version>1.5.18</muchq.hystrix.version>
+    <muchq.immutables.version>2.8.3</muchq.immutables.version>
+    <muchq.jackson.version>2.10.1</muchq.jackson.version>
+    <muchq.javaxinject.version>1</muchq.javaxinject.version>
+    <muchq.java.version>11</muchq.java.version>
+    <muchq.jdbi.version>2.78</muchq.jdbi.version>
+    <muchq.jdbi3.version>3.12.0</muchq.jdbi3.version>
+    <muchq.jetty.version>9.4.24.v20191120</muchq.jetty.version>
+    <muchq.junit.version>4.12</muchq.junit.version>
+    <muchq.logback.version>1.2.3</muchq.logback.version>
     <muchq.maven.release.id>maven-central-release</muchq.maven.release.id>
-    <muchq.mockito.version>2.12.0</muchq.mockito.version>
+    <muchq.maven.release.url>http://repo1.maven.org/maven2</muchq.maven.release.url>
+    <muchq.mockito.version>3.2.0</muchq.mockito.version>
     <muchq.netty.version>4.1.31.Final</muchq.netty.version>
-    <muchq.resteasy.version>3.6.2.Final</muchq.resteasy.version>
+    <muchq.resteasy.version>4.4.1.Final</muchq.resteasy.version>
     <muchq.rosetta.version>3.11.9</muchq.rosetta.version>
-    <muchq.slf4j.version>1.7.25</muchq.slf4j.version>
+    <muchq.slf4j.version>1.7.29</muchq.slf4j.version>
   </properties>
 
   <dependencyManagement>
@@ -75,6 +90,11 @@
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
+        <version>${muchq.jetty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>javax-websocket-server-impl</artifactId>
         <version>${muchq.jetty.version}</version>
       </dependency>
       <dependency>
@@ -226,12 +246,17 @@
       <dependency>
         <groupId>org.reflections</groupId>
         <artifactId>reflections</artifactId>
-        <version>0.9.10</version>
+        <version>0.9.11</version>
       </dependency>
       <dependency>
         <groupId>org.immutables</groupId>
         <artifactId>value</artifactId>
         <version>${muchq.immutables.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.websocket</groupId>
+        <artifactId>javax.websocket-api</artifactId>
+        <version>1.1</version>
       </dependency>
       <dependency>
         <groupId>com.muchq</groupId>
@@ -273,7 +298,7 @@
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
-        <version>3.1.0</version>
+        <version>3.14.0</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -310,7 +335,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.6.1</version>
+        <version>3.8.1</version>
         <configuration>
           <source>${muchq.java.version}</source>
           <target>${muchq.java.version}</target>
@@ -334,7 +359,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0-M1</version>
+        <version>3.0.0-M3</version>
         <executions>
           <execution>
             <id>enforce-same-versions</id>
@@ -357,7 +382,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.8.1</version>
+        <version>3.0.0-M1</version>
         <configuration>
           <groupId>${project.groupId}</groupId>
           <generatePom>false</generatePom>
