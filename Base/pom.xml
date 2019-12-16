@@ -12,22 +12,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <muchq.mainClass/>
 
-    <muchq.failsafe.version>1.1.1</muchq.failsafe.version>
-    <muchq.guava.version>27.0.1-jre</muchq.guava.version>
-    <muchq.guice.version>4.1.0</muchq.guice.version>
-    <muchq.hystrix.version>1.5.11</muchq.hystrix.version>
-    <muchq.immutables.version>2.7.3</muchq.immutables.version>
-    <muchq.jackson.version>2.9.7</muchq.jackson.version>
-    <muchq.jdbi.version>2.78</muchq.jdbi.version>
-    <muchq.jdbi3.version>3.5.1</muchq.jdbi3.version>
-    <muchq.jetty.version>9.4.14.v20181114</muchq.jetty.version>
-    <muchq.junit.version>4.12</muchq.junit.version>
-    <muchq.logback.version>1.2.3</muchq.logback.version>
-    <muchq.java.version>11</muchq.java.version>
-    <muchq.jackson.version>2.10.1</muchq.jackson.version>
-    <muchq.jetty.version>9.4.24.v20191120</muchq.jetty.version>
-    <muchq.netty.version>4.1.43.Final</muchq.netty.version>
-
     <muchq.asynchttp.version>2.10.4</muchq.asynchttp.version>
     <muchq.aws.sdk.version>1.11.106</muchq.aws.sdk.version>
     <muchq.curator.version>4.2.0</muchq.curator.version>
