@@ -32,7 +32,7 @@
     <muchq.maven.release.id>maven-central-release</muchq.maven.release.id>
     <muchq.maven.release.url>http://repo1.maven.org/maven2</muchq.maven.release.url>
     <muchq.mockito.version>3.2.0</muchq.mockito.version>
-    <muchq.netty.version>4.1.31.Final</muchq.netty.version>
+    <muchq.netty.version>4.1.42.Final</muchq.netty.version>
     <muchq.resteasy.version>4.4.1.Final</muchq.resteasy.version>
     <muchq.rosetta.version>3.11.9</muchq.rosetta.version>
     <muchq.slf4j.version>1.7.29</muchq.slf4j.version>
