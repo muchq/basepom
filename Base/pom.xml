@@ -10,32 +10,31 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <plugin.prettier.goal>write</plugin.prettier.goal>
     <muchq.mainClass/>
 
     <muchq.asynchttp.version>2.12.1</muchq.asynchttp.version>
-    <muchq.aws.sdk.version>1.11.908</muchq.aws.sdk.version>
-    <muchq.curator.version>4.2.0</muchq.curator.version>
+    <muchq.aws.sdk.version>2.17.172</muchq.aws.sdk.version>
+    <muchq.curator.version>5.2.1</muchq.curator.version>
     <muchq.failsafe.version>2.4.0</muchq.failsafe.version>
-    <muchq.guava.version>30.0-jre</muchq.guava.version>
-    <muchq.guice.version>4.2.3</muchq.guice.version>
-    <muchq.hikaricp.version>3.4.5</muchq.hikaricp.version>
-    <muchq.hystrix.version>1.5.18</muchq.hystrix.version>
+    <muchq.guava.version>31.1-jre</muchq.guava.version>
+    <muchq.guice.version>5.1.0</muchq.guice.version>
+    <muchq.hikaricp.version>5.0.1</muchq.hikaricp.version>
     <muchq.immutables.version>2.8.8</muchq.immutables.version>
-    <muchq.jackson.version>2.12.0</muchq.jackson.version>
+    <muchq.jackson.version>2.13.2.20220328</muchq.jackson.version>
     <muchq.javaxinject.version>1</muchq.javaxinject.version>
     <muchq.java.version>11</muchq.java.version>
-    <muchq.jdbi.version>2.78</muchq.jdbi.version>
-    <muchq.jdbi3.version>3.17.0</muchq.jdbi3.version>
+    <muchq.jdbi.version>3.28.0</muchq.jdbi.version>
     <muchq.jetty.version>9.4.43.v20210629</muchq.jetty.version>
     <muchq.junit.version>4.13.1</muchq.junit.version>
-    <muchq.logback.version>1.2.3</muchq.logback.version>
+    <muchq.logback.version>1.2.11</muchq.logback.version>
     <muchq.maven.release.id>maven-central-release</muchq.maven.release.id>
     <muchq.maven.release.url>https://repo1.maven.org/maven2</muchq.maven.release.url>
     <muchq.mockito.version>3.6.28</muchq.mockito.version>
     <muchq.netty.version>4.1.54.Final</muchq.netty.version>
-    <muchq.resteasy.version>4.5.8.Final</muchq.resteasy.version>
-    <muchq.rosetta.version>3.11.9</muchq.rosetta.version>
-    <muchq.slf4j.version>1.7.30</muchq.slf4j.version>
+    <muchq.resteasy.version>6.0.0.Final</muchq.resteasy.version>
+    <muchq.rosetta.version>3.11.10</muchq.rosetta.version>
+    <muchq.slf4j.version>1.7.37</muchq.slf4j.version>
   </properties>
 
   <dependencyManagement>
@@ -62,11 +61,6 @@
         <version>${muchq.netty.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.netflix.hystrix</groupId>
-        <artifactId>hystrix-core</artifactId>
-        <version>${muchq.hystrix.version}</version>
-      </dependency>
-      <dependency>
         <groupId>net.jodah</groupId>
         <artifactId>failsafe</artifactId>
         <version>${muchq.failsafe.version}</version>
@@ -88,13 +82,10 @@
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-guice</artifactId>
-        <version>${muchq.resteasy.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-jackson2-provider</artifactId>
-        <version>${muchq.resteasy.version}</version>
+        <artifactId>resteasy-dependencies</artifactId>
+        <version>6.0.0.Final</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.asynchttpclient</groupId>
@@ -118,44 +109,11 @@
       </dependency>
 
       <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
+        <groupId>com.fasterxml.jackson</groupId>
+        <artifactId>jackson-bom</artifactId>
         <version>${muchq.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>${muchq.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
-        <version>${muchq.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-jdk8</artifactId>
-        <version>${muchq.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-guava</artifactId>
-        <version>${muchq.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-joda</artifactId>
-        <version>${muchq.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatypes-collections</artifactId>
-        <version>${muchq.jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.datatype</groupId>
-        <artifactId>jackson-datatype-jsr310</artifactId>
-        <version>${muchq.jackson.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>javax.inject</groupId>
@@ -194,6 +152,14 @@
       </dependency>
 
       <dependency>
+        <groupId>org.jdbi</groupId>
+        <artifactId>jdbi3-bom</artifactId>
+        <version>${muchq.jdbi.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
         <groupId>com.hubspot.rosetta</groupId>
         <artifactId>RosettaCore</artifactId>
         <version>${muchq.rosetta.version}</version>
@@ -207,12 +173,6 @@
         <groupId>com.hubspot.rosetta</groupId>
         <artifactId>RosettaJdbi</artifactId>
         <version>${muchq.rosetta.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.jdbi</groupId>
-        <artifactId>jdbi</artifactId>
-        <version>${muchq.jdbi.version}</version>
       </dependency>
 
       <dependency>
@@ -323,15 +283,18 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
+        <version>3.10.1</version>
         <configuration>
           <source>${muchq.java.version}</source>
           <target>${muchq.java.version}</target>
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.3.0</version>
         <executions>
           <execution>
             <id>analyze</id>
@@ -347,8 +310,9 @@
         </executions>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0-M3</version>
+        <version>3.0.0</version>
         <executions>
           <execution>
             <id>enforce-same-versions</id>
@@ -371,7 +335,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
-        <version>3.0.0-M1</version>
+        <version>3.0.0-M2</version>
         <configuration>
           <groupId>${project.groupId}</groupId>
           <generatePom>false</generatePom>
@@ -379,7 +343,43 @@
           <version>${project.version}</version>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>com.hubspot.maven.plugins</groupId>
+        <artifactId>prettier-maven-plugin</artifactId>
+        <version>0.17</version>
+        <configuration>
+          <prettierJavaVersion>1.6.1</prettierJavaVersion>
+          <printWidth>120</printWidth>
+          <tabWidth>2</tabWidth>
+          <useTabs>false</useTabs>
+          <ignoreConfigFile>true</ignoreConfigFile>
+          <ignoreEditorConfig>true</ignoreEditorConfig>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>${plugin.prettier.goal}</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>travis</id>
+      <activation>
+        <property>
+          <name>env.TRAVIS</name>
+        </property>
+      </activation>
+      <properties>
+        <!-- But in our CI environment we want to validate that code is formatted -->
+        <plugin.prettier.goal>check</plugin.prettier.goal>
+      </properties>
+    </profile>
+  </profiles>
 
 </project>
