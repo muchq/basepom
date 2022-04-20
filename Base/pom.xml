@@ -85,7 +85,7 @@
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-dependencies</artifactId>
+        <artifactId>resteasy-bom</artifactId>
         <version>${muchq.resteasy.version}</version>
         <type>pom</type>
         <scope>import</scope>
