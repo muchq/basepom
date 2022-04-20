@@ -31,8 +31,9 @@
     <muchq.maven.release.id>maven-central-release</muchq.maven.release.id>
     <muchq.maven.release.url>https://repo1.maven.org/maven2</muchq.maven.release.url>
     <muchq.mockito.version>3.6.28</muchq.mockito.version>
+    <muchq.micronaut.version>3.4.2</muchq.micronaut.version>
     <muchq.netty.version>4.1.54.Final</muchq.netty.version>
-    <muchq.resteasy.version>6.0.0.Final</muchq.resteasy.version>
+    <muchq.resteasy.version>4.7.6.Final</muchq.resteasy.version>
     <muchq.rosetta.version>3.11.10</muchq.rosetta.version>
     <muchq.slf4j.version>1.7.37</muchq.slf4j.version>
   </properties>
@@ -40,14 +41,16 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.hubspot.dropwizard</groupId>
-        <artifactId>dropwizard-guicier</artifactId>
-        <version>${dropwizard-guicier.version}</version>
+        <groupId>io.micronaut</groupId>
+        <artifactId>micronaut-bom</artifactId>
+        <version>${muchq.micronaut.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.amazonaws</groupId>
         <artifactId>aws-java-sdk-core</artifactId>
-        <version>${aws.sdk.version}</version>
+        <version>${muchq.aws.sdk.version}</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -83,7 +86,7 @@
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-dependencies</artifactId>
-        <version>6.0.0.Final</version>
+        <version>${muchq.resteasy.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
