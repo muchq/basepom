@@ -33,7 +33,7 @@
     <muchq.mockito.version>3.6.28</muchq.mockito.version>
     <muchq.micronaut.version>3.4.2</muchq.micronaut.version>
     <muchq.netty.version>4.1.54.Final</muchq.netty.version>
-    <muchq.resteasy.version>4.7.6.Final</muchq.resteasy.version>
+    <muchq.resteasy.version>4.7.5.Final</muchq.resteasy.version>
     <muchq.rosetta.version>3.11.10</muchq.rosetta.version>
     <muchq.slf4j.version>1.7.37</muchq.slf4j.version>
   </properties>
