@@ -35,7 +35,7 @@
     <muchq.netty.version>4.1.54.Final</muchq.netty.version>
     <muchq.resteasy.version>4.7.5.Final</muchq.resteasy.version>
     <muchq.rosetta.version>3.11.10</muchq.rosetta.version>
-    <muchq.slf4j.version>1.7.37</muchq.slf4j.version>
+    <muchq.slf4j.version>1.7.36</muchq.slf4j.version>
   </properties>
 
   <dependencyManagement>
