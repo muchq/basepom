@@ -25,7 +25,7 @@
     <muchq.javaxinject.version>1</muchq.javaxinject.version>
     <muchq.java.version>11</muchq.java.version>
     <muchq.jdbi.version>3.28.0</muchq.jdbi.version>
-    <muchq.jetty.version>9.4.44.v20210927</muchq.jetty.version>
+    <muchq.jetty.version>10.0.10</muchq.jetty.version>
     <muchq.junit.version>4.13.1</muchq.junit.version>
     <muchq.logback.version>1.2.11</muchq.logback.version>
     <muchq.maven.release.id>maven-central-release</muchq.maven.release.id>
