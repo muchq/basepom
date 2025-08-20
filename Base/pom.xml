@@ -13,7 +13,7 @@
     <plugin.prettier.goal>write</plugin.prettier.goal>
     <muchq.mainClass/>
 
-    <muchq.asynchttp.version>2.12.1</muchq.asynchttp.version>
+    <muchq.asynchttp.version>2.12.4</muchq.asynchttp.version>
     <muchq.aws.sdk.version>2.17.172</muchq.aws.sdk.version>
     <muchq.curator.version>5.2.1</muchq.curator.version>
     <muchq.failsafe.version>2.4.0</muchq.failsafe.version>
